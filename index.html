@@ -4,125 +4,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="font/flaticon.css"> 
+  <link href="style/style.css" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
-<h1>Personal information</h1>
-  <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
-    <div>
-      <fieldset>
-        <legend>Personal information</legend>
-        <div>
-          <label>
-            <span>Surname:</span>
-            <input type="text" name="surname" required>
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>Name:</span>
-            <input type="text" name="name">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>How old are you?:</span>
-            <input type="text" name="age">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>Full date of birth:</span>
-            <input type="date" name="date">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>I accept the terms of the agreement</span>
-            <input type="checkbox" name="accept" required>
-          </label>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <legend>Registration</legend>
-
-        <div>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>Password</span>
-            <input type="password" name="password">
-          </label>
-        </div>
-      </fieldset>
-
-      <fieldset class="facts-block">
-        <legend>An interesting fact about you!</legend>
-        <span>Do you love cats?</span>
-
-        <div>
-          <label>
-            <input type="radio" name="cats" value="yes" >Yes
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <input type="radio" name="cats" value="no">No
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>What is your favorite color?</span>
-            <input type="color" name="color">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>What time do you go to bed?</span>
-            <input type="time" name="bed_time">
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>What you favorite brand of cars?</span>
-            <select name="cars" size="4" >
-              <option value="BMW" selected>BMW</option>
-              <option value="Audi">Audi</option>
-              <option value="Lada">Lada</option>
-            </select>
-          </label>
-        </div>
-
-        <div>
-          <label>
-            <span>How do you rate our work?</span>
-            <input type="range" name="rate" min="1" max="10">
-          </label>
-        </div>      
-      </fieldset>
-
-      <fieldset>
-        <legend>Your comments:</legend>
-        <textarea name="comment" placeholder="Type here" maxlength="228"></textarea>
-      </fieldset>
-
-      <button>Submit</button>
+  <section class="header-section">
+    <div class="container">
+      <div class="logo-block">
+        <a href="" class="logo">Elena</a>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content">
+        <h1 class="h1-intro">Have a good day</h1>
+        <h2>Just for you on themeforest</h2>
+        <a href="" class="get-copy-btn">Get your copy now</a>
+      </div>
     </div>
-  </form>
+  </section>
+  <section class="benefits-section">
+    <div class="container">
+      <div class="benefits">
+
+        <div class="benefit-item">
+          <img src="img/user-group-copy.png" alt="Profs">
+          <h2>Profesionals</h2>
+          <div class="benefit-text">
+              Lorem ipsum dolor sit ametconsectetur elit. 
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <img src="img/heart.png" alt="Amateurs">
+          <h2>Amateurs</h2>
+          <div class="benefit-text">
+              Lorem ipsum dolor sit ametconsectetur elit. 
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <img src="img/headset.png" alt="For everyone">
+          <h2>For everyone</h2>
+          <div class="benefit-text">
+              Lorem ipsum dolor sit ametconsectetur elit. 
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="another-benefits-section">
+    <div class="container">
+      <div class="another-benefits">
+
+        <div class="another-benefits-item">
+          <img src="img/Layer-14.jpg" alt="pic">
+          <h2>Responsive email template</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</div>
+          <a href="">Read more</a>
+        </div>
+
+        <div class="another-benefits-item">
+          <img src="img/Layer-161.jpg" alt="pic">
+          <h2>Fully compatible template</h2>
+          <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</div>
+          <a href="">Read more</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="descr-section">
+    <div class="container">
+      <div class="descr">
+        <h3>
+          <object 
+                  type="image/svg+xml"
+                  data="picture.svg">
+          <img src="img/life-preserver.svg" alt="pic">
+          </object>
+          Fully Supported template
+        </h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. 
+          Ut semper semper lacus. Suspendisse convallis vel tellus at consectetur. 
+          Aenean risus arcu
+        </p>
+        <a href="">Read more</a>
+      </div>
+    </div>
+  </section>
+  <section class="stuff-section">
+    <div class="container">
+      <div class="stuff">
+        <div class="stuff-item">
+          <img src="img/Layer-171.jpg" alt="pic">
+          <h2>FULLY Layered PSD</h2>
+          <div class="stuff-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </div>
+          <a href="">Check this out ></a>
+        </div>
+        <div class="stuff-item">
+          <img src="img/Layer-20.jpg" alt="pic">
+          <h2>FUll Compatibility</h2>
+          <div class="stuff-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </div>
+          <a href="">Check this out ></a>
+        </div>
+        <div class="stuff-item">
+          <img src="img/Layer-18.jpg" alt="pic">
+          <h2>very great modules</h2>
+          <div class="stuff-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </div>
+          <a href="">Check this out <span>></span></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="another-stuff-section">
+    <div class="container">
+      <div class="another-stuff">
+        <div class="another-stuff-item">
+          <h3>
+            <object 
+                    type="image/svg+xml"
+                    data="picture.svg">
+                    <img src="img/paper-plane.svg" alt="pic">
+            </object>
+            Send it now
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Suspendisse malesuada sodales risus, a adipiscing lorem. 
+          </p>
+          <a href="">Read more</a>
+        </div>
+        <div class="another-stuff-item">
+            <h3>
+              <object 
+                      type="image/svg+xml"
+                      data="picture.svg">
+                      <img src="img/pencil.svg" alt="pic">
+              </object>
+              VERY NICE TO SEE
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Suspendisse malesuada sodales risus, a adipiscing lorem. 
+            </p>
+            <a href="">Read more</a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="one-img-article-section">
+    <div class="container">
+      <div class="one-img-article">
+        <img src="img/Layer-19.jpg" alt="pic">
+        <div class="one-img-text">
+          <h3>JUST FOR YOU ON THEMEFOREST</h3>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Donec interdum mollis risus, in mattis erat convallis egestas.
+          </p>
+          <a href="">Read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brands-section">
+    <div class="container">
+      <div class="brands">
+        <h3>
+          <object 
+                  type="image/svg+xml"
+                  data="picture.svg">
+                  <img src="img/empty-star.svg" alt="pic">
+          </object>
+          this template was featured on
+        </h3>
+        <ul class="brands-list">
+          <li class="TechCrunch">TechCrunch</li>
+          <li class="Promail">Promail</li>
+          <li class="Mashable">Mashable</li>
+          <li class="atlaspix">atlaspix</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="footer-items">
+        <div class="footer-item">
+            Elenea © <span>copyright 2013 - Unsubscribe here</span>
+        </div>
+        
+        <div class="footer-item">
+            <img src="img/google-plus-logo.svg" alt="pic">
+            <img src="img/facebook-logo-1.svg" alt="pic">
+            <img src="img/twitter-logo.svg" alt="pic">
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
