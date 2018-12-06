@@ -364,7 +364,8 @@ template {
   width: 100%; }
 
 .header-section .container {
-  background-image: url(../img/bg.jpg); }
+  background-image: url(../img/bg.jpg);
+  background-size: cover; }
 
 .logo-block {
   text-align: center;
