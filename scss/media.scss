@@ -1,4 +1,44 @@
-@media (min-width: 960px){
+@media (min-width: 479px) and (max-width: 767px){
+  .header-content{
+    .h1-intro{
+      font-size: 46px;
+    }
+    h2{
+      font-size: 27px;
+    }
+  }
+
+  .another-benefits{
+    padding: 54px 60px;
+    .another-benefits-item{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .descr{
+    padding: 50px 60px 0;
+  }
+
+  .stuff{
+    padding: 57px 60px 65px;
+  }
+
+  .another-stuff{
+    padding: 57px 60px 65px;
+  }
+
+  .one-img-article{
+    padding: 64px 60px;
+    img{
+      width: 100%;
+    }
+  }
+
+}
+
+@media (min-width: 768px){
   .container{
     margin: 0 auto;
     width: 800px;
