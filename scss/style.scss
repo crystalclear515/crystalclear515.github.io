@@ -2,15 +2,17 @@
   box-sizing: border-box;
 }
 
+
 .container{
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
 }
 
 //HEADER
 
 .header-section .container{
-  background-image: url(../img/bg.jpg)
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
 }
 
 .logo-block{
@@ -31,6 +33,7 @@
   display: flex;
   justify-content: center;
   list-style: none;
+  flex-direction: column;
   li {
     width: 12.3%;
   }
@@ -51,7 +54,7 @@
     color: #fff;
     text-transform: uppercase;
     font-family: "Ubuntu";
-    font-size: 53px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
   h2{
@@ -60,25 +63,8 @@
     font-family: 'PT Sans';
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 15px;
-    &::before{
-      left: 160px;
-      position: absolute;
-      content: "";
-      height: 2px;
-      width: 100px;
-      background-color: rgba(255, 255, 255, 0.4);
-      top: 8px;
-    }
-    &::after{
-      right: 160px;
-      position: absolute;
-      content: "";
-      height: 2px;
-      width: 100px;
-      background-color: rgba(255, 255, 255, 0.4);
-      top: 8px;
-    }
+    font-size: 13px;
+
   }
   .get-copy-btn{
     width: 196px;
@@ -105,13 +91,15 @@
   background-color: #eeeeef;
   display: flex;
   justify-content: space-around;
-  padding: 56px 93px 62px;
+  flex-direction: column;
+  padding: 30px 15px;
   .benefit-item{
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    width: 24%;
+    width: 100%;
     text-align: center;
     img{
       display: inline-block;
@@ -143,7 +131,8 @@
         width: 120px;
         height: 2px;
         background-color: #e2e3e4;
-        left: 16px;
+        left: 50%;
+        transform: translate(-50%, 0);
       }
     }
   }
@@ -157,9 +146,10 @@
 .another-benefits{
   display: flex;
   justify-content: space-around;
-  padding: 54px 54px;
+  flex-direction: column;
+  padding: 54px 15px;
   .another-benefits-item{
-    width: 35%;
+    width: 100%;
     img{
       width: 100%;
     }
@@ -184,7 +174,7 @@
         background: -moz-linear-gradient(left, #e9e9ea 0%, #eceded 50%, #f1f1f1 74%, #f3f3f3 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */ 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */
       }
     }
     div{
@@ -217,12 +207,12 @@
 
 .descr{
   background-color: #eeeeef;
-  padding: 50px 105px 0;
+  padding: 50px 15px 0;
   h3{
     color: #40474e;
     margin-top: 17px;
     padding-left: 40px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "PT Sans";
     font-weight: bold;
     text-transform: uppercase;
@@ -238,14 +228,14 @@
       bottom: -19px;
       position: absolute;
       height: 2px;
-      width: 500px;
+      width: 98%;
       content: "";
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9e9ea+0,eceded+50,f1f1f1+74,f3f3f3+100 */
       background: #e9e9ea; /* Old browsers */
       background: -moz-linear-gradient(left, #e9e9ea 0%, #eceded 50%, #f1f1f1 74%, #f3f3f3 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(left, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(to right, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */ 
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */
     }
   }
   p{
@@ -279,12 +269,14 @@
 //STUFF SECTION
 
 .stuff{
-  padding: 57px 95px 65px;
+  flex-direction: column;
+  padding: 57px 15px 65px;
   display: flex;
   justify-content: space-around;
   padding-top: 57px;
   .stuff-item{
-    width: 30%;
+    width: 100%;
+    margin-bottom: 40px;
     img{
       width: 100%;
     }
@@ -332,12 +324,14 @@
 
 .another-stuff{
   background-color: #eeeeef;
-  padding: 46px 105px 60px;
+  padding: 46px 15px 60px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   .another-stuff-item{
-    width: 47%;
-    margin-right: 50px;
+    margin-bottom: 40px;
+    width: 100%;
+    margin-right: 0px;
     &:nth-child(even){
       margin-right: 0px;
     }
@@ -394,17 +388,20 @@
 
 //!anoter STUFF
 
-//one img section 
+//one img section
 
 .one-img-article{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  padding: 64px 103px;
+  padding: 64px 15px;
+  img{
+    width: 100%;
+  }
   .one-img-text{
-    margin-left: 35px;
+    margin-left: 0px;
     h3{
-      margin-top: 0px;
+      margin-top: 15px;
       color: #40474e;
       font-size: 20px;
       font-family: "PT Sans";
@@ -424,7 +421,7 @@
         background: -moz-linear-gradient(left, #e9e9ea 0%, #eceded 50%, #f1f1f1 74%, #f3f3f3 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */ 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */
       }
     }
     p{
@@ -459,7 +456,7 @@
 .brands-section{
   .brands{
     background-color: #50c3af;
-    padding: 50px 100px;
+    padding: 50px 15px;
     h3{
       margin: 0 auto;
       width: 274px;
@@ -490,15 +487,17 @@
       }
     }
     .brands-list{
+      text-align: center;
       list-style: none;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       margin-top: 56px;
       padding: 0px;
       li{
         font-size: 26px;
-        color: #cbede7; 
+        color: #cbede7;
+        margin-bottom: 10px;
       }
       .TechCrunch{
         font-family: "Belinda";
@@ -521,10 +520,10 @@
 
 footer{
   .footer-items{
-    padding: 24px 108px;
+    padding: 24px 15px;
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 10px;
     font-family: "PT Sans";
     font-style: normal;
     .footer-item{
