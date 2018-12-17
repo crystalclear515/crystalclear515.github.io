@@ -1,4 +1,4 @@
-@media (min-width: 479px) and (max-width: 767px){
+@media (min-width: 479px) and (max-width: 767px) {
   .header-content{
     .h1-intro{
       font-size: 46px;
@@ -38,7 +38,7 @@
 
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .container{
     margin: 0 auto;
     width: 800px;
@@ -72,13 +72,13 @@
     li {
       width: 12.3%;
     }
-      a{
-        color: #fff;
-        text-decoration: none;
-        font-family: "Open Sans";
-        text-transform: uppercase;
-        font-size: 13px;
-      }
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-family: "Open Sans";
+      text-transform: uppercase;
+      font-size: 13px;
+    }
   }
 
   .header-content{
@@ -146,7 +146,7 @@
     flex-direction: row;
     padding: 56px 93px 62px;
     .benefit-item{
-      margin-bottom: 0px;
+      margin-bottom: 0;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -284,9 +284,6 @@
         content: "";
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9e9ea+0,eceded+50,f1f1f1+74,f3f3f3+100 */
         background: #e9e9ea; /* Old browsers */
-        background: -moz-linear-gradient(left, #e9e9ea 0%, #eceded 50%, #f1f1f1 74%, #f3f3f3 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #e9e9ea 0%,#eceded 50%,#f1f1f1 74%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ea', endColorstr='#f3f3f3',GradientType=1 ); /* IE6-9 */
       }
     }
